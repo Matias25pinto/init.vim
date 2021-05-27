@@ -43,7 +43,7 @@ Plug 'leafgarland/typescript-vim' "TypeScript Syntax
 
 "Coc es un motor de autocompletado
 Plug 'neoclide/coc.nvim', {'branch':'release'}
- 
+
 "Command line fuzzy finder es un buscardor de ficheros
 Plug 'junegunn/fzf',{'do':{-> fzf#install()}}
 Plug 'junegunn/fzf.vim'
@@ -51,6 +51,9 @@ Plug 'junegunn/fzf.vim'
 "Vim-airline tema para la barra inferior
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+"Soporte para php coc-phpls
+Plug 'marlonfan/coc-phpls'
 
 call plug#end()
 
@@ -62,8 +65,10 @@ let mapleader="," "TECLA Lider
 
 "Theme ayu-vim
 set termguicolors
-let ayucolor="dark" "for dark version of theme
+"let ayucolor="dark" "for dark version of theme
+let ayucolor="mirage" "for mirage version of theme
 colorscheme ayu
+
 " IndentLine 
 let g:indentLine_defaultGroup='Specialkey'
 let g:indentLine_char_list=['|', '¦', '┆', '┊']
